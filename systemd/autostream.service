@@ -1,0 +1,13 @@
+[Unit]
+Description=Automtic Audio Streaming
+After=syslog.target network.target
+
+[Service]
+Type=simple
+PIDFile=/run/autostream.pid
+ExecStart=/usr/local/sbin/autostream
+WatchdogSec=14400
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
