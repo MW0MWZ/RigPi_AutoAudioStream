@@ -10,3 +10,5 @@ Put the Python script in /usr/local/sbin
 Put the SystemD unit file in /etc/systemd/system
 
 Maks eusre you have arecord and ffmpeg installed.
+
+apt-get install ffmpeg python-mysql.connector
